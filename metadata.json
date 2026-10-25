@@ -1,0 +1,8 @@
+{
+  "name": "Remix DensiVue Lab-Oscilloscope 402",
+  "description": "High-fidelity digital phosphor RF oscilloscope and protocol bus demodulator for 2.4GHz Wi-Fi and BLE signal acquisition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

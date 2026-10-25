@@ -1,0 +1,790 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;background-color:#111410;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"background":"#111410","surface-container-lowest":"#0c0f0b","on-primary":"#522300","on-primary-fixed-variant":"#743500","on-surface-variant":"#dec1b1","on-tertiary-fixed":"#30130d","secondary":"#d7ffc5","surface-container-low":"#191c18","on-secondary-fixed":"#022100","on-secondary":"#053900","inverse-on-surface":"#2e312d","error":"#ffb4ab","on-background":"#e1e3dc","primary-fixed-dim":"#ffb68a","on-error-container":"#ffdad6","on-tertiary-container":"#4b2821","secondary-fixed":"#79ff5b","primary-fixed":"#ffdbc8","tertiary-container":"#bf8e83","on-primary-container":"#532400","tertiary-fixed":"#ffdad3","surface-variant":"#333631","on-tertiary":"#492720","surface-bright":"#373a35","outline-variant":"#574236","primary":"#ffb68a","tertiary":"#f0baae","surface-dim":"#111410","surface-container-highest":"#333631","inverse-surface":"#e1e3dc","primary-container":"#f07816","secondary-container":"#2ff801","surface-tint":"#ffb68a","on-secondary-container":"#0f6d00","on-error":"#690005","surface-container":"#1d201c","on-tertiary-fixed-variant":"#633d35","surface-container-high":"#282b26","inverse-primary":"#984700","outline":"#a68b7d","on-surface":"#e1e3dc","surface":"#111410","secondary-fixed-dim":"#2ae500","tertiary-fixed-dim":"#f0baae","error-container":"#93000a","on-primary-fixed":"#321300","on-secondary-fixed-variant":"#095300"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-md":"1rem","space-xs":"0.125rem","space-xl":"1.5rem","space-sm":"0.25rem","gutter":"0.5rem","space-md":"0.5rem","margin":"1rem","margin-desktop":"1.5rem","space-lg":"1rem"},"fontFamily":{"headline-lg-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-lg":["Space Grotesk"],"label-md":["JetBrains Mono"],"body-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"label-lg":["JetBrains Mono"],"display-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"]},"fontSize":{"headline-lg-mobile":["1.5rem",{"lineHeight":"1.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.25rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.08em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"2.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["3rem",{"lineHeight":"3.25rem","letterSpacing":"-0.05em","fontWeight":"700"}],"label-sm":["0.625rem",{"lineHeight":"0.875rem","letterSpacing":"0.1em","fontWeight":"500"}]}}}}</script><header class="fixed top-0 left-0 w-full h-14 bg-surface-container-lowest z-50 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-lg text-label-lg text-primary tracking-widest">DensiVue</span><span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-space-xs rounded">LAB-OSCILLOSCOPE 402</span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary">LIVE</span></div><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="text-primary">SR:</span><span class="">2.5 GS/s</span></div><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="text-primary">BUS:</span><span class="">USB-C / 480M</span></div></div></div><div class="flex items-center gap-space-lg"><nav class="flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">memory</span><span class="font-label-sm text-label-sm">TRIG: AUTO</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-8 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md px-space-md"><div class="flex flex-col gap-space-lg"><div class="px-space-sm pt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase block mb-space-sm">Signal Acquisition</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="oscilloscope-view" href="#"><span class="material-symbols-outlined text-[18px]">show_chart</span><span class="font-label-md text-label-md">Analog Trace</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="spectrum-analyzer" href="#"><span class="material-symbols-outlined text-[18px]">equalizer</span><span class="font-label-md text-label-md">Spectrum FFT</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="bus-protocol-decoder" href="#"><span class="material-symbols-outlined text-[18px]">developer_board</span><span class="font-label-md text-label-md">Protocol Bus</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="system-telemetry" href="#"><span class="material-symbols-outlined text-[18px]">settings_input_component</span><span class="font-label-md text-label-md">Calibration &amp; IO</span></a></nav></div></div><div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-space-xs"><div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="">FPGA TEMP</span><span class="text-secondary">41.8°C</span></div><div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="">JITTER RMS</span><span class="text-primary">1.12 ps</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-8 min-h-screen bg-background px-margin-desktop"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1520px] mx-auto py-space-md space-y-space-md">
+<!-- TOP INSTRUMENT METRICS / SUB-RACK HEADER STRIP -->
+<div class="w-full bg-surface-container-lowest p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 bg-primary-container"></div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest">TEK-SENTRA 402B</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-sm py-space-xs">SER: 884-X992-RF</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+
+</div>
+<div class="flex items-center gap-space-xl font-label-sm text-label-sm">
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">RF Ingress Rate</span>
+<span class="text-secondary font-label-md text-label-md" id="stat-ingress">923.58 kbps</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">Wi-Fi Frame Ingress</span>
+<span class="text-on-surface font-label-md text-label-md" id="stat-wifi">9,441 fr</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">BLE Adv Packets</span>
+<span class="text-on-surface font-label-md text-label-md" id="stat-ble">5,503 adv</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">PLL Lock</span>
+<span class="text-secondary font-label-md text-label-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> 2442.00 MHz
+          </span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-space-xs text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary">TRIG SYNC</span>
+</div>
+</div>
+</div>
+<!-- MAIN CHASSIS CONSOLE (Center Dual-Bay Physical Chassis) -->
+<div class="w-full bg-surface-container-lowest p-space-md grid grid-cols-12 gap-space-md">
+<!-- LEFT SECTION: CRT PHOSPHOR OSCILLOSCOPE BAY (~62% -> 7 or 8 columns on desktop) -->
+<div class="col-span-12 xl:col-span-8 flex flex-col bg-surface-container-low p-space-md">
+<!-- CRT Top Bezel with Screws and Model Plate -->
+<div class="flex items-center justify-between pb-space-sm px-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-3 h-3 rounded-full bg-surface-container-highest flex items-center justify-center">
+<div class="w-1.5 h-0.5 bg-background"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">
+              ANALOG PHOSPHOR MONITOR // 10×8 RETICLE
+            </span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<span class="text-secondary bg-surface-container px-space-sm py-space-xs">BEAM: 14.2 kV</span>
+<span class="text-on-surface-variant">PERSISTENCE: 420ms</span>
+<div class="w-3 h-3 rounded-full bg-surface-container-highest flex items-center justify-center">
+<div class="w-1.5 h-0.5 bg-background"></div>
+</div>
+</div>
+</div>
+<!-- RECESSED CRT SCREEN WELL (Dark Red Tint Phosphor Chamber) -->
+<div class="relative w-full aspect-[16/9] min-h-[380px] bg-[#140504] overflow-hidden flex flex-col justify-between p-space-md">
+<!-- Optical Vignette & Mesh Overlay -->
+<div class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(255,100,50,0.06)_0%,rgba(5,1,1,0.85)_100%)] z-10"></div>
+<!-- 10x8 Division Graticule Reticle SVG Layer -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-10" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="12.5%" id="graticule-grid" patternUnits="userSpaceOnUse" width="10%">
+<path d="M 0 0 L 100 0 100 100 0 100 Z" fill="none" stroke="#3b120c" stroke-dasharray="2,3" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#graticule-grid)" height="100%" width="100%"></rect>
+<!-- Major Center Axes with 0.2 div subdivision ticks -->
+<line stroke="#5a180f" stroke-width="1.2" x1="50%" x2="50%" y1="0" y2="100%"></line>
+<line stroke="#5a180f" stroke-width="1.2" x1="0" x2="100%" y1="50%" y2="50%"></line>
+<!-- Axis Sub-tick Marks on Center Lines -->
+<g stroke="#7e2215" stroke-width="1">
+<!-- Y-Center Sub-Ticks -->
+<line x1="49%" x2="51%" y1="12.5%" y2="12.5%"></line>
+<line x1="49%" x2="51%" y1="25%" y2="25%"></line>
+<line x1="49%" x2="51%" y1="37.5%" y2="37.5%"></line>
+<line x1="49%" x2="51%" y1="62.5%" y2="62.5%"></line>
+<line x1="49%" x2="51%" y1="75%" y2="75%"></line>
+<line x1="49%" x2="51%" y1="87.5%" y2="87.5%"></line>
+<!-- X-Center Sub-Ticks -->
+<line x1="10%" x2="10%" y1="48.5%" y2="51.5%"></line>
+<line x1="20%" x2="20%" y1="48.5%" y2="51.5%"></line>
+<line x1="30%" x2="30%" y1="48.5%" y2="51.5%"></line>
+<line x1="40%" x2="40%" y1="48.5%" y2="51.5%"></line>
+<line x1="60%" x2="60%" y1="48.5%" y2="51.5%"></line>
+<line x1="70%" x2="70%" y1="48.5%" y2="51.5%"></line>
+<line x1="80%" x2="80%" y1="48.5%" y2="51.5%"></line>
+<line x1="90%" x2="90%" y1="48.5%" y2="51.5%"></line>
+</g>
+</svg>
+<!-- Interactive CRT Oscilloscope Canvas (Real-time Phosphor Sweeping) -->
+<canvas class="absolute inset-0 w-full h-full z-0 block" id="scopeCanvas" width="1230" height="691"></canvas>
+<!-- CRT TOP OVERLAY (Telemetry Labels) -->
+<div class="relative z-20 flex justify-between items-start font-label-sm text-label-sm pointer-events-none">
+<div class="space-y-space-xs bg-[#0c0303]/85 p-space-sm backdrop-blur-sm">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="w-2 h-2 rounded-sm bg-secondary-fixed"></span>
+<span class="font-bold tracking-wider">CH1: 2.4GHz RF / Wi-Fi [100mV/DIV]</span>
+<span class="text-on-surface-variant text-[10px]">BW: 20MHz</span>
+</div>
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-2 h-2 rounded-sm bg-primary-container"></span>
+<span class="font-bold tracking-wider">CH2: BLE 5.0 GFSK [50mV/DIV]</span>
+<span class="text-on-surface-variant text-[10px]">CH: 37/38/39</span>
+</div>
+</div>
+<div class="bg-[#0c0303]/85 px-space-sm py-space-xs text-right backdrop-blur-sm">
+<span class="text-secondary font-bold block" id="crt-frame-rate">SAMPLE: 2.5 GS/s</span>
+<span class="text-primary text-[10px] block">TRIG SLOPE: POS (+)</span>
+</div>
+</div>
+<!-- CRT BOTTOM OVERLAY (Trigger & Timebase Parameters) -->
+<div class="relative z-20 flex justify-between items-end font-label-sm text-label-sm pointer-events-none">
+<div class="bg-[#0c0303]/85 px-space-sm py-space-xs flex items-center gap-space-md backdrop-blur-sm">
+<span class="text-on-surface-variant">TIME/DIV: <span class="text-on-surface font-semibold">25ms</span></span>
+<span class="text-on-surface-variant">TRIG LEVEL: <span class="text-secondary font-semibold">+140mV</span></span>
+<span class="text-on-surface-variant">STATUS: <span class="text-secondary font-bold">ARMED / TRIGGERED</span></span>
+</div>
+<div class="bg-[#0c0303]/85 px-space-sm py-space-xs text-on-surface-variant text-[10px] flex items-center gap-space-sm backdrop-blur-sm">
+<span class="">ACQ BUFFER: RING 1024K</span>
+<span class="text-primary">NOISE FLOOR: -94 dBm</span>
+</div>
+</div>
+</div>
+<!-- CRT Bottom Hardware Calibration Sub-Strip -->
+<div class="flex flex-wrap items-center justify-between pt-space-sm px-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-lg">
+<span class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 bg-primary rounded-full"></span> PROBE ATTEN: 10X
+            </span>
+<span class="">COUPLING: AC 50Ω</span>
+<span class="">OFFSET: 0.00 V</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="bg-surface-container-high px-space-md py-space-xs text-on-surface hover:bg-surface-bright active:scale-95 transition-transform flex items-center gap-space-xs" id="btnTraceFreeze">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span>
+<span class="">HOLD TRACE</span>
+</button>
+<button class="bg-surface-container-high px-space-md py-space-xs text-on-surface hover:bg-surface-bright active:scale-95 transition-transform flex items-center gap-space-xs" id="btnTraceClear">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span class="">CLEAR DISP</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT SECTION: INDUSTRIAL BURNT-ORANGE CONTROL MODULE (~38% -> 4 or 5 columns) -->
+<div class="col-span-12 xl:col-span-4 bg-primary-container p-space-md flex flex-col justify-between shadow-xl">
+<div class="space-y-space-md">
+<!-- Orange Panel Top Label & Panel Screws -->
+<div class="flex items-center justify-between text-on-primary-container pb-space-xs border-b border-on-primary-container/20">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-on-primary-container/30 flex items-center justify-center">
+<div class="w-1 h-0.5 bg-primary-container"></div>
+</div>
+<span class="font-label-md text-label-md font-bold tracking-widest">RF TELEMETRY ACQUISITION MODULE</span>
+</div>
+<div class="w-2.5 h-2.5 rounded-full bg-on-primary-container/30 flex items-center justify-center">
+<div class="w-1 h-0.5 bg-primary-container"></div>
+</div>
+</div>
+<!-- PRIMARY DIGITAL VFD / 7-SEGMENT NUMERICAL READOUT -->
+<div class="bg-surface-container-lowest p-space-md shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-[10px] font-label-sm text-on-surface-variant tracking-wider uppercase">
+<span class="">TOTAL OBSERVATIONS (LIVE)</span>
+<span class="flex items-center gap-1 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                ACTIVE FIFO
+              </span>
+</div>
+<!-- Glowing Digital Display Value -->
+<div class="py-space-sm flex items-baseline justify-between">
+<span class="font-display-lg text-display-lg text-primary tracking-wider select-none font-bold" id="vfd-counter">14,944</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">EVENTS/Σ</span>
+</div>
+<!-- Secondary Metrics Strip inside the VFD well -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs border-t border-surface-container-highest">
+<div class="bg-surface-container p-space-xs">
+<span class="text-[10px] block text-on-surface-variant font-label-sm">WI-FI PROBES</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold" id="sub-wifi-counter">09441</span>
+</div>
+<div class="bg-surface-container p-space-xs">
+<span class="text-[10px] block text-on-surface-variant font-label-sm">BLE PACKETS</span>
+<span class="font-label-lg text-label-lg text-primary font-bold" id="sub-ble-counter">05503</span>
+</div>
+</div>
+</div>
+<!-- TACTILE ROTARY CONTROLS & STEPPERS -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Rotary Knob 1: Trigger Sensitivity -->
+<div class="bg-surface-container-lowest p-space-md flex flex-col items-center justify-between text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">
+                TRIGGER SENS
+              </span>
+<!-- Graphic Tactile Milled Rotary Dial -->
+<div class="relative w-20 h-20 my-space-sm rounded-full bg-surface-container-high shadow-md flex items-center justify-center cursor-pointer hover:brightness-110 active:scale-95 transition-all" id="dialTrigger">
+<!-- Radial detents -->
+<div class="absolute inset-1 rounded-full bg-surface-container border border-surface-container-highest flex items-center justify-center">
+<div class="absolute top-1 w-1.5 h-3 bg-primary rounded-xs"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">72%</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full justify-between">
+<button class="bg-surface-container px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface hover:bg-surface-bright active:scale-90">-</button>
+<span class="font-label-sm text-label-sm text-primary">+1.4 dB</span>
+<button class="bg-surface-container px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface hover:bg-surface-bright active:scale-90">+</button>
+</div>
+</div>
+<!-- Rotary Knob 2: Volts / Division -->
+<div class="bg-surface-container-lowest p-space-md flex flex-col items-center justify-between text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">
+                VOLTS / DIV
+              </span>
+<!-- Graphic Rotary Dial 2 -->
+<div class="relative w-20 h-20 my-space-sm rounded-full bg-surface-container-high shadow-md flex items-center justify-center cursor-pointer hover:brightness-110 active:scale-95 transition-all" id="dialVolts">
+<div class="absolute inset-1 rounded-full bg-surface-container border border-surface-container-highest flex items-center justify-center">
+<div class="absolute right-1 w-3 h-1.5 bg-secondary-fixed rounded-xs"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">CH1</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full justify-between">
+<button class="bg-surface-container px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface hover:bg-surface-bright active:scale-90">-</button>
+<span class="font-label-sm text-label-sm text-secondary">100 mV</span>
+<button class="bg-surface-container px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface hover:bg-surface-bright active:scale-90">+</button>
+</div>
+</div>
+</div>
+<!-- CIRCULAR ANALOG GAUGE: BUFFER UTILIZATION / REVIEW THRESHOLD -->
+<div class="bg-surface-container-lowest p-space-md flex items-center justify-between gap-space-md">
+<div class="flex-1 space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase block">
+                BUFFER CAPACITY
+              </span>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">78%</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">800 / 1024 KB</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-[11px] leading-tight">
+                Ring memory saturation high. Auto-purge FIFO active on slot 4.
+              </p>
+</div>
+<!-- Precision Circular Gauge SVG -->
+<div class="w-24 h-24 relative flex-shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 100 100">
+<!-- Track -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#282b26" stroke-width="8"></circle>
+<!-- Ticks arc -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#574236" stroke-dasharray="2 6" stroke-width="8"></circle>
+<!-- Value Arc (78%) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#f07816" stroke-dasharray="238.7" stroke-dashoffset="52.5" stroke-linecap="butt" stroke-width="8"></circle>
+</svg>
+<!-- Center Hub -->
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-primary font-bold">CRIT</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">78%</span>
+</div>
+</div>
+</div>
+<!-- CONTEXTUAL ALERT BOX (Beneath the circular dial) -->
+<div class="bg-surface-container-lowest p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">
+                  THRESHOLD EXCEEDED: ZONE 04 BURST
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">20:41:08 UTC</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">
+              Surge ingress rate (+180 pkts/s) detected on SSID probing channel 06. MAC randomization anomaly.
+            </p>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-error font-medium">PKT LOSS: 0.00%</span>
+<button class="bg-primary text-on-primary px-space-md py-space-xs font-label-sm text-label-sm font-bold tracking-wider hover:bg-primary-fixed active:scale-95 transition-all flex items-center gap-1">
+<span class="">INSPECT PAYLOADS</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Orange Chassis Bottom Fastener detail -->
+<div class="pt-space-md flex items-center justify-between text-on-primary-container/40 text-[10px] font-label-sm">
+<span class="">SPEC: MIL-STD-810G</span>
+<span class="">CALIBRATED: 2025-01-14</span>
+<span class="">CHASSIS REF 0402-B</span>
+</div>
+</div>
+</div>
+<!-- LOWER INSTRUMENT CHASSIS: EVENT LOG STREAM & DECODE BUS -->
+<div class="w-full bg-surface-container-lowest p-space-md space-y-space-md">
+<!-- Strip Header & Quick Toggles -->
+<div class="flex flex-wrap items-center justify-between gap-space-md border-b border-surface-container-high pb-space-sm">
+<div class="flex items-center gap-space-lg">
+<span class="font-label-md text-label-md text-primary font-bold tracking-widest uppercase">
+            REAL-TIME PACKET BUS DEMODULATION &amp; LOG STREAM
+          </span>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="">FILTER:</span>
+<span class="text-secondary bg-surface-container px-space-sm py-space-xs">ALL CHANNELS (2.4G + BLE)</span>
+</div>
+</div>
+<!-- Trace Stream Mode Actuators -->
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<button class="bg-primary text-on-primary px-space-md py-space-xs font-bold tracking-wider transition-colors" id="modeLive">
+            LIVE RF STREAM
+          </button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-space-xs transition-colors" id="modeDemo">
+            DEMO CAPTURE
+          </button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-space-xs transition-colors" id="modePause">
+            PAUSE SWEEP
+          </button>
+</div>
+</div>
+<!-- Real-time Packet Event Stream Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-label-sm text-label-sm border-collapse">
+<thead>
+<tr class="text-on-surface-variant border-b border-surface-container-high uppercase text-[10px] tracking-wider">
+<th class="py-space-xs px-space-sm">INDEX / TIMESTAMP</th>
+<th class="py-space-xs px-space-sm">TYPE</th>
+<th class="py-space-xs px-space-sm">FREQ / CH</th>
+<th class="py-space-xs px-space-sm">SOURCE MAC / ADDR</th>
+<th class="py-space-xs px-space-sm">RSSI / SNR</th>
+
+<th class="py-space-xs px-space-sm text-right">ACTION</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-on-surface" id="packet-stream-body"><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14944 • 21:28:04.604</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">94:e6:f2:8c:00:19</td>
+            <td class="py-space-sm px-space-sm text-secondary">-57 dBm • 31 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">ADV_IND • AD: 0x09 COMPLETE_NAME</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14943 • 21:28:03.245</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">c4:98:bb:01:44:9e</td>
+            <td class="py-space-sm px-space-sm text-secondary">-46 dBm • 21 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">SSID: "AP-LOBBY-HIGHZ" • DIRECTED</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14941 • 21:28:00.996</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">94:e6:f2:8c:00:19</td>
+            <td class="py-space-sm px-space-sm text-secondary">-80 dBm • 18 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">ADV_IND • AD: 0x09 COMPLETE_NAME</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14935 • 21:27:58.744</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">94:e6:f2:8c:00:19</td>
+            <td class="py-space-sm px-space-sm text-secondary">-82 dBm • 25 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">SSID: "IOT-GATEWAY-X9" • DIRECTED</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14934 • 21:27:58.297</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">f0:a2:25:31:0a:b2</td>
+            <td class="py-space-sm px-space-sm text-secondary">-39 dBm • 31 dB</td>
+            
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14928 • 21:27:56.046</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">ac:bc:32:d7:6f:80</td>
+            <td class="py-space-sm px-space-sm text-secondary">-67 dBm • 27 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">ADV_IND • AD: 0x09 COMPLETE_NAME</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14927 • 21:27:55.595</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">18:e8:29:4e:82:11</td>
+            <td class="py-space-sm px-space-sm text-secondary">-47 dBm • 31 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">SSID: "SENSOR-NODE-TX" • DIRECTED</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14914 • 21:27:50.244</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">18:e8:29:4e:82:11</td>
+            <td class="py-space-sm px-space-sm text-secondary">-47 dBm • 21 dB</td>
+            
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14912 • 21:27:49.003</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">18:e8:29:4e:82:11</td>
+            <td class="py-space-sm px-space-sm text-secondary">-57 dBm • 19 dB</td>
+            
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14911 • 21:27:48.393</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">c4:98:bb:01:44:9e</td>
+            <td class="py-space-sm px-space-sm text-secondary">-71 dBm • 25 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">SSID: "AP-LOBBY-HIGHZ" • DIRECTED</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14909 • 21:27:47.496</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">ac:bc:32:d7:6f:80</td>
+            <td class="py-space-sm px-space-sm text-secondary">-69 dBm • 14 dB</td>
+            
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14907 • 21:27:46.143</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-secondary font-bold">
+                802.11 PROBE
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2462 MHz [CH 11]</td>
+            <td class="py-space-sm px-space-sm text-primary">f0:a2:25:31:0a:b2</td>
+            <td class="py-space-sm px-space-sm text-secondary">-75 dBm • 29 dB</td>
+            
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14906 • 21:27:45.694</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">58:d9:c3:21:40:e4</td>
+            <td class="py-space-sm px-space-sm text-secondary">-72 dBm • 30 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">ADV_IND • AD: 0x09 COMPLETE_NAME</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr><tr class="hover:bg-surface-container transition-colors">
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#14905 • 21:27:45.244</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs text-primary font-bold">
+                BLE 5.0 ADV
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">2402 MHz [CH 37]</td>
+            <td class="py-space-sm px-space-sm text-on-surface">f0:a2:25:31:0a:b2</td>
+            <td class="py-space-sm px-space-sm text-secondary">-52 dBm • 21 dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">ADV_IND • AD: 0x09 COMPLETE_NAME</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          </tr></tbody>
+</table>
+</div>
+<!-- BOTTOM TELEMETRY STRIP -->
+<div class="pt-space-sm border-t border-surface-container-high flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-space-md">
+<div class="flex items-center gap-space-lg">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">memory</span>
+            HARDWARE: <span class="text-on-surface">ESP32-S3 CORE via USB TTYUSB0</span>
+</span>
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+            NTP: <span class="text-secondary">LOCKED (STRATUM 1)</span>
+</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="">CAPTURE DURATION: <span class="text-on-surface font-semibold">04:18:22</span></span>
+<span class="">DROPPED PKTS: <span class="text-secondary font-semibold">0 (0.00%)</span></span>
+<span class="text-primary font-semibold">FIFO HEALTH: 100% OK</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initInstrumentConsole() {
+    // 1. Oscilloscope CRT Phosphor Waveform Sweep Generator
+    const canvas = document.getElementById('scopeCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let animationFrameId;
+    let isPaused = false;
+    let width, height;
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * (window.devicePixelRatio || 1);
+      canvas.height = rect.height * (window.devicePixelRatio || 1);
+      width = canvas.width;
+      height = canvas.height;
+    }
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    let sweepX = 0;
+    const historyPointsCH1 = [];
+    const historyPointsCH2 = [];
+    const maxPoints = 600;
+
+    let totalObservations = 14892;
+    let wifiProbes = 9412;
+    let blePackets = 5480;
+
+    function generateNoiseSample(prevY, channel) {
+      // Base low-amplitude noise with occasional burst pulses (RF Packet burst)
+      const isBurst = Math.random() < 0.04;
+      const spike = isBurst ? (Math.random() > 0.5 ? 1 : -1) * (0.35 + Math.random() * 0.45) : 0;
+      const jitter = (Math.random() - 0.5) * 0.08;
+      
+      let baseOffset = channel === 1 ? -0.15 : 0.22;
+      let target = baseOffset + spike + jitter;
+      return prevY + (target - prevY) * 0.35;
+    }
+
+    let ch1Y = -0.15;
+    let ch2Y = 0.22;
+
+    function renderScope() {
+      if (!isPaused) {
+        // Phosphor persistence decay simulation
+        ctx.fillStyle = 'rgba(20, 5, 4, 0.12)';
+        ctx.fillRect(0, 0, width, height);
+
+        // Update signals
+        ch1Y = generateNoiseSample(ch1Y, 1);
+        ch2Y = generateNoiseSample(ch2Y, 2);
+
+        const normalizedCH1 = (ch1Y + 1) * 0.5 * height;
+        const normalizedCH2 = (ch2Y + 1) * 0.5 * height;
+
+        historyPointsCH1.push({ x: sweepX, y: normalizedCH1 });
+        historyPointsCH2.push({ x: sweepX, y: normalizedCH2 });
+
+        if (historyPointsCH1.length > maxPoints) {
+          historyPointsCH1.shift();
+          historyPointsCH2.shift();
+        }
+
+        // Draw CH1: Phosphor Green #39FF14 Trace
+        ctx.beginPath();
+        ctx.lineWidth = 2 * (window.devicePixelRatio || 1);
+        ctx.strokeStyle = '#39FF14';
+        ctx.shadowColor = '#39FF14';
+        ctx.shadowBlur = 8;
+
+        for (let i = 0; i < historyPointsCH1.length; i++) {
+          const pt = historyPointsCH1[i];
+          if (i === 0) ctx.moveTo(pt.x, pt.y);
+          else ctx.lineTo(pt.x, pt.y);
+        }
+        ctx.stroke();
+
+        // Draw CH2: Burnt Orange / Amber #F07816 Trace
+        ctx.beginPath();
+        ctx.lineWidth = 1.6 * (window.devicePixelRatio || 1);
+        ctx.strokeStyle = '#F07816';
+        ctx.shadowColor = '#F07816';
+        ctx.shadowBlur = 6;
+
+        for (let i = 0; i < historyPointsCH2.length; i++) {
+          const pt = historyPointsCH2[i];
+          if (i === 0) ctx.moveTo(pt.x, pt.y);
+          else ctx.lineTo(pt.x, pt.y);
+        }
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+
+        // Draw Leading Phosphor Spot (The Electron Beam Head)
+        ctx.fillStyle = '#FFFFFF';
+        ctx.shadowColor = '#39FF14';
+        ctx.shadowBlur = 12;
+        ctx.beginPath();
+        ctx.arc(sweepX, normalizedCH1, 2.5 * (window.devicePixelRatio || 1), 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.shadowColor = '#F07816';
+        ctx.beginPath();
+        ctx.arc(sweepX, normalizedCH2, 2 * (window.devicePixelRatio || 1), 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        // Advance Sweep Timebase
+        sweepX += 2.4 * (window.devicePixelRatio || 1);
+        if (sweepX > width) {
+          sweepX = 0;
+          historyPointsCH1.length = 0;
+          historyPointsCH2.length = 0;
+        }
+      }
+
+      animationFrameId = requestAnimationFrame(renderScope);
+    }
+
+    renderScope();
+
+    // 2. Controls & Actuators
+    const btnFreeze = document.getElementById('btnTraceFreeze');
+    const btnClear = document.getElementById('btnTraceClear');
+    const btnLive = document.getElementById('modeLive');
+    const btnDemo = document.getElementById('modeDemo');
+    const btnPause = document.getElementById('modePause');
+
+    if (btnFreeze) {
+      btnFreeze.addEventListener('click', () => {
+        isPaused = !isPaused;
+        btnFreeze.classList.toggle('bg-primary');
+        btnFreeze.classList.toggle('text-on-primary');
+      });
+    }
+
+    if (btnClear) {
+      btnClear.addEventListener('click', () => {
+        ctx.fillStyle = '#140504';
+        ctx.fillRect(0, 0, width, height);
+        historyPointsCH1.length = 0;
+        historyPointsCH2.length = 0;
+        sweepX = 0;
+      });
+    }
+
+    if (btnPause) {
+      btnPause.addEventListener('click', () => {
+        isPaused = true;
+        btnLive.className = "bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-space-xs transition-colors";
+        btnPause.className = "bg-primary text-on-primary px-space-md py-space-xs font-bold tracking-wider transition-colors";
+      });
+    }
+
+    if (btnLive) {
+      btnLive.addEventListener('click', () => {
+        isPaused = false;
+        btnPause.className = "bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-space-xs transition-colors";
+        btnLive.className = "bg-primary text-on-primary px-space-md py-space-xs font-bold tracking-wider transition-colors";
+      });
+    }
+
+    // 3. Live Telemetry & Event Influx Generator
+    const vfdCounter = document.getElementById('vfd-counter');
+    const subWifi = document.getElementById('sub-wifi-counter');
+    const subBle = document.getElementById('sub-ble-counter');
+    const statWifi = document.getElementById('stat-wifi');
+    const statBle = document.getElementById('stat-ble');
+    const statIngress = document.getElementById('stat-ingress');
+    const streamBody = document.getElementById('packet-stream-body');
+
+    const sampleBSSIDs = [
+      'c4:98:bb:01:44:9e', 'f0:a2:25:31:0a:b2', '18:e8:29:4e:82:11',
+      '94:e6:f2:8c:00:19', 'ac:bc:32:d7:6f:80', '58:d9:c3:21:40:e4'
+    ];
+    const sampleSSIDs = [
+      'CORP-GUEST-5G', 'SENSOR-NODE-TX', 'IOT-GATEWAY-X9',
+      'AP-LOBBY-HIGHZ', 'FIELD-TEST-BEACON', 'UNTAGGED-PROBE-01'
+    ];
+
+    setInterval(() => {
+      if (isPaused) return;
+
+      const incrementWifi = Math.random() > 0.4 ? 1 : 0;
+      const incrementBle = Math.random() > 0.6 ? 1 : 0;
+      const totalInc = incrementWifi + incrementBle;
+
+      if (totalInc > 0) {
+        totalObservations += totalInc;
+        wifiProbes += incrementWifi;
+        blePackets += incrementBle;
+
+        if (vfdCounter) vfdCounter.textContent = totalObservations.toLocaleString('en-US');
+        if (subWifi) subWifi.textContent = wifiProbes.toString().padStart(5, '0');
+        if (subBle) subBle.textContent = blePackets.toString().padStart(5, '0');
+        if (statWifi) statWifi.textContent = `${wifiProbes.toLocaleString('en-US')} fr`;
+        if (statBle) statBle.textContent = `${blePackets.toLocaleString('en-US')} adv`;
+
+        // Update Ingress bit rate fluctuation
+        const randomIngress = (918 + Math.random() * 8).toFixed(2);
+        if (statIngress) statIngress.textContent = `${randomIngress} kbps`;
+
+        // Occasionally insert a live row into the packet stream table
+        if (streamBody && Math.random() < 0.45) {
+          const now = new Date();
+          const timeStr = `${now.toTimeString().split(' ')[0]}.${String(now.getMilliseconds()).padStart(3, '0')}`;
+          const isWifi = incrementWifi > 0;
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-surface-container transition-colors';
+
+          const bssid = sampleBSSIDs[Math.floor(Math.random() * sampleBSSIDs.length)];
+          const ssid = sampleSSIDs[Math.floor(Math.random() * sampleSSIDs.length)];
+          const rssi = -(38 + Math.floor(Math.random() * 45));
+          const snr = 14 + Math.floor(Math.random() * 18);
+
+          tr.innerHTML = `
+            <td class="py-space-sm px-space-sm text-on-surface-variant">#${totalObservations} • ${timeStr}</td>
+            <td class="py-space-sm px-space-sm">
+              <span class="bg-surface-container px-space-sm py-space-xs ${isWifi ? 'text-secondary' : 'text-primary'} font-bold">
+                ${isWifi ? '802.11 PROBE' : 'BLE 5.0 ADV'}
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">${isWifi ? '2462 MHz [CH 11]' : '2402 MHz [CH 37]'}</td>
+            <td class="py-space-sm px-space-sm ${isWifi ? 'text-primary' : 'text-on-surface'}">${bssid}</td>
+            <td class="py-space-sm px-space-sm text-secondary">${rssi} dBm • ${snr} dB</td>
+            <td class="py-space-sm px-space-sm font-mono truncate max-w-xs">${isWifi ? `SSID: "${ssid}" • DIRECTED` : 'ADV_IND • AD: 0x09 COMPLETE_NAME'}</td>
+            <td class="py-space-sm px-space-sm text-right text-primary cursor-pointer hover:underline">[DUMP HEX]</td>
+          `;
+
+          streamBody.insertBefore(tr, streamBody.firstChild);
+          if (streamBody.children.length > 7) {
+            streamBody.removeChild(streamBody.lastChild);
+          }
+        }
+      }
+    }, 450);
+
+    // 4. Subtle Dial Knob Tactile Rotate Micro-Interactions
+    const dial1 = document.getElementById('dialTrigger');
+    const dial2 = document.getElementById('dialVolts');
+    let deg1 = 45;
+    let deg2 = 120;
+
+    if (dial1) {
+      dial1.addEventListener('click', () => {
+        deg1 = (deg1 + 30) % 360;
+        dial1.style.transform = `rotate(${deg1}deg)`;
+      });
+    }
+
+    if (dial2) {
+      dial2.addEventListener('click', () => {
+        deg2 = (deg2 + 45) % 360;
+        dial2.style.transform = `rotate(${deg2}deg)`;
+      });
+    }
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 w-full h-8 bg-surface-container-lowest z-50 flex items-center justify-between px-margin-desktop font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-lg"><span class="">RECORD: <span class="text-on-surface">CONTINUOUS</span></span><span class="">DUR: <span class="text-secondary">00:48:19.402</span></span><span class="">BUFFER: <span class="text-on-surface">1024K / 1024K (SYNC 100%)</span></span></div><div class="flex items-center gap-space-lg"><span class="">CLK: <span class="text-on-surface">INTERNAL 10.000MHz</span></span><span class="">BAUD: <span class="text-primary">921600 bps</span></span><span class="">CRC: <span class="text-secondary">PASSED (0 ERR)</span></span></div></footer>
+
+
+
+</body></html>
